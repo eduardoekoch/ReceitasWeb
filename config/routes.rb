@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   #get "/", to: "welcome#index", as: "banana"
   root to: "welcome#index"
 
-  resources :recipes, only: [:show]
+  resources :recipes, only: [:show, :new, :create]
 end
